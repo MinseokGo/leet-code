@@ -14,7 +14,6 @@ class Solution {
                 ).add(word);
         }
 
-        return map.values().stream()
-                .collect(Collectors.toList());
+        return new ArrayList<>(map.values());
     }
 }
