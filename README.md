@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/MinseokGo/leet-code/tree/master/0005-longest-palindromic-substring) |
+| [0015-3sum](https://github.com/MinseokGo/leet-code/tree/master/0015-3sum) |
 | [0042-trapping-rain-water](https://github.com/MinseokGo/leet-code/tree/master/0042-trapping-rain-water) |
 | [0125-valid-palindrome](https://github.com/MinseokGo/leet-code/tree/master/0125-valid-palindrome) |
 | [0344-reverse-string](https://github.com/MinseokGo/leet-code/tree/master/0344-reverse-string) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/MinseokGo/leet-code/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/MinseokGo/leet-code/tree/master/0015-3sum) |
 | [0042-trapping-rain-water](https://github.com/MinseokGo/leet-code/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/MinseokGo/leet-code/tree/master/0049-group-anagrams) |
 | [0837-most-common-word](https://github.com/MinseokGo/leet-code/tree/master/0837-most-common-word) |
@@ -49,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/MinseokGo/leet-code/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/MinseokGo/leet-code/tree/master/0049-group-anagrams) |
 | [0974-reorder-data-in-log-files](https://github.com/MinseokGo/leet-code/tree/master/0974-reorder-data-in-log-files) |
 ## Counting
