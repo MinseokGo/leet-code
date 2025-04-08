@@ -1,13 +1,23 @@
 class Solution {
 
     public int arrayPairSum(int[] nums) {
-        int answer = 0;
-        Arrays.sort(nums);
+        int[] count = new int[20001];
 
-        for (int i = 0; i < nums.length; i += 2) {
-            answer += nums[i];
+        for (int num : nums) {
+            count[num + 10000] += 1;
         }
 
-        return answer;
+        int sum = 0;
+        boolean isAdd = true;
+        for (int i = 0; i < count.length; i++) {
+            while (count[i]-- > 0) {
+                if (isAdd) {
+                    sum += i - 10000;
+                }
+                isAdd = !isAdd;
+            }
+        }
+
+        return sum;
     }
 }
