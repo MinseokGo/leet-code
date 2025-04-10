@@ -13,16 +13,12 @@ class Solution {
             if (ch == '(' || ch == '{' || ch == '[') {
                 deque.addLast(ch);
             } else {
-                if (brackets.get(ch) != deque.pollLast()) {
+                if (deque.isEmpty() || brackets.get(ch) != deque.pollLast()) {
                     return false;
                 }
             }
         }
 
-        if (deque.size() > 0) {
-            return false;
-        }
-
-        return true;
+        return deque.isEmpty();
     }
 }
