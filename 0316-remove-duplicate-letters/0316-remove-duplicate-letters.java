@@ -1,36 +1,38 @@
 class Solution {
 
     public String removeDuplicateLetters(String s) {
-        Deque<Character> deque = new ArrayDeque<>();
-        int[] counts = new int[26];
+        Deque<Character> stack = new ArrayDeque<>();
+        int[] count = new int[26];
         boolean[] seen = new boolean[26];
 
-        char[] chars = s.toCharArray();
-        for (char ch : chars) {
-            counts[ch - 97] += 1;
+        for (char ch : s.toCharArray()) {
+            count[ch - 'a']++;
         }
 
-        for (char ch : chars) {
-            counts[ch - 97] -= 1;
-            if (!seen[ch - 97]) {
-                seen[ch - 97] = true;
-                while (deque.size() > 0) {
-                    if (deque.peekLast() > ch && counts[deque.peekLast() - 97] > 0) {
-                        char remove = deque.pollLast();
-                        seen[remove - 97] = false;;
-                    } else {
-                        break;
-                    }
-                }
-                deque.addLast(ch);
+        for (char ch : s.toCharArray()) {
+            int idx = ch - 'a';
+            count[idx]--;
+
+            if (seen[idx]) continue;
+
+            while (
+                !stack.isEmpty() &&
+                stack.peekLast() > ch &&
+                count[stack.peekLast() - 'a'] > 0
+            ) {
+                char removed = stack.pollLast();
+                seen[removed - 'a'] = false;
             }
+
+            stack.addLast(ch);
+            seen[idx] = true;
         }
 
         StringBuilder sb = new StringBuilder();
-        while (deque.size() > 0) {
-            sb.append(deque.pollFirst());
+        for (char ch : stack) {
+            sb.append(ch);
         }
-        
+
         return sb.toString();
     }
 }
