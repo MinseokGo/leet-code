@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0561-array-partition](https://github.com/MinseokGo/leet-code/tree/master/0561-array-partition) |
 | [0739-daily-temperatures](https://github.com/MinseokGo/leet-code/tree/master/0739-daily-temperatures) |
 | [0837-most-common-word](https://github.com/MinseokGo/leet-code/tree/master/0837-most-common-word) |
+| [0860-design-circular-queue](https://github.com/MinseokGo/leet-code/tree/master/0860-design-circular-queue) |
 | [0974-reorder-data-in-log-files](https://github.com/MinseokGo/leet-code/tree/master/0974-reorder-data-in-log-files) |
 ## Hash Table
 |  |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/MinseokGo/leet-code/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/MinseokGo/leet-code/tree/master/0234-palindrome-linked-list) |
+| [0860-design-circular-queue](https://github.com/MinseokGo/leet-code/tree/master/0860-design-circular-queue) |
 ## Recursion
 |  |
 | ------- |
@@ -105,9 +107,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0225-implement-stack-using-queues](https://github.com/MinseokGo/leet-code/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/MinseokGo/leet-code/tree/master/0232-implement-queue-using-stacks) |
+| [0860-design-circular-queue](https://github.com/MinseokGo/leet-code/tree/master/0860-design-circular-queue) |
 ## Queue
 |  |
 | ------- |
 | [0225-implement-stack-using-queues](https://github.com/MinseokGo/leet-code/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/MinseokGo/leet-code/tree/master/0232-implement-queue-using-stacks) |
+| [0860-design-circular-queue](https://github.com/MinseokGo/leet-code/tree/master/0860-design-circular-queue) |
 <!---LeetCode Topics End-->
