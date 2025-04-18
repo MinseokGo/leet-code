@@ -1,22 +1,25 @@
 class Solution {
 
     public ListNode mergeKLists(ListNode[] lists) {
-        int[] counts = new int[20001];
+        PriorityQueue<ListNode> pq = new PriorityQueue<>(
+            (a, b) -> Integer.compare(a.val, b.val)
+        );
 
-        for (ListNode list : lists) {
-            while (list != null) {
-                counts[list.val + 10000] += 1;
-                list = list.next;
+        for (ListNode node : lists) {
+            if (node != null) {
+                pq.add(node);
             }
         }
 
         ListNode answer = new ListNode(-1);
-        ListNode copy = answer;
-        for (int i = 0; i < counts.length; i++) {
-            int count = counts[i];
-            for (int j = 0; j < count; j++) {
-                copy.next = new ListNode(i - 10000);
-                copy = copy.next;
+        ListNode tail = answer;
+        while (pq.size() > 0) {
+            ListNode current = pq.poll();
+            tail.next = current;
+            tail = tail.next;
+
+            if (current.next != null) {
+                pq.add(current.next);
             }
         }
 
