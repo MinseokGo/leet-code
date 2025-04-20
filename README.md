@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0859-design-circular-deque](https://github.com/MinseokGo/leet-code/tree/master/0859-design-circular-deque) |
 | [0860-design-circular-queue](https://github.com/MinseokGo/leet-code/tree/master/0860-design-circular-queue) |
 | [0974-reorder-data-in-log-files](https://github.com/MinseokGo/leet-code/tree/master/0974-reorder-data-in-log-files) |
+| [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
 ## Hash Table
 |  |
 | ------- |
@@ -73,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/MinseokGo/leet-code/tree/master/0049-group-anagrams) |
 | [0561-array-partition](https://github.com/MinseokGo/leet-code/tree/master/0561-array-partition) |
 | [0974-reorder-data-in-log-files](https://github.com/MinseokGo/leet-code/tree/master/0974-reorder-data-in-log-files) |
+| [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
 ## Counting
 |  |
 | ------- |
@@ -123,12 +125,26 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0023-merge-k-sorted-lists) |
+| [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0023-merge-k-sorted-lists) |
+| [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
 ## Merge Sort
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0023-merge-k-sorted-lists) |
+## Math
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
+## Geometry
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
+## Quickselect
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
