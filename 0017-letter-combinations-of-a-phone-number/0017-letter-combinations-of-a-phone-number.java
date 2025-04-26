@@ -12,31 +12,32 @@ class Solution {
     );
 
     private int length;
-    private Set<String> answer = new HashSet<>();
+    private List<String> answer = new ArrayList<>();
 
     public List<String> letterCombinations(String digits) {
-        if (digits.equals("")) {
+        length = digits.length();
+        if (length == 0) {
             return new ArrayList<>();
         }
         
         char[] chars = digits.toCharArray();
-        length = digits.length();
+        dfs(chars, 0, new StringBuilder());
 
-        dfs(chars, 0, "");
-
-        return new ArrayList<>(answer);
+        return answer;
     }
 
-    private void dfs(char[] chars, int index, String combination) {
+    private void dfs(char[] chars, int index, StringBuilder combination) {
         if (index == length) {
-            answer.add(combination);
+            answer.add(combination.toString());
             return;
         }
 
         char ch = chars[index];
         List<String> alphabets = map.get(ch);
         for (int i = 0; i < alphabets.size(); i++) {
-            dfs(chars, index + 1, combination + alphabets.get(i));
+            combination.append(alphabets.get(i));
+            dfs(chars, index + 1, combination);
+            combination.deleteCharAt(combination.length() - 1);
         }
     }
 }
