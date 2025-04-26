@@ -5,13 +5,12 @@ class Solution {
 
     public int numIslands(char[][] grid) {
         int island = 0;
-        boolean[][] visited = new boolean[grid.length][grid[0].length];
 
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
-                if (grid[i][j] == '1' && !visited[i][j]) {
+                if (grid[i][j] == '1') {
                     island += 1;
-                    bfs(grid, i, j, visited);
+                    bfs(grid, i, j);
                 }
             }
         }
@@ -19,10 +18,9 @@ class Solution {
         return island;
     }
 
-    private void bfs(char[][] grid, int x, int y, boolean[][] visited) {
+    private void bfs(char[][] grid, int x, int y) {
         Queue<Position> queue = new LinkedList<>();
         queue.add(new Position(x, y));
-        visited[x][y] = true;
 
         while (!queue.isEmpty()) {
             Position position = queue.poll();
@@ -31,12 +29,9 @@ class Solution {
                 int nx = position.x + dx[i];
                 int ny = position.y + dy[i];
 
-                if (isValidPosition(nx, ny, grid.length, grid[0].length) 
-                    && !visited[nx][ny] 
-                    && grid[nx][ny] == '1'
-                ) {
+                if (isValidPosition(nx, ny, grid.length, grid[0].length) && grid[nx][ny] == '1') {
                     queue.add(new Position(nx, ny));
-                    visited[nx][ny] = true;
+                    grid[nx][ny] = 1;
                 }
             }
         }
