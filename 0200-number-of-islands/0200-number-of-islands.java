@@ -30,13 +30,13 @@ class Solution {
             int nx = x + dx[i];
             int ny = y + dy[i];
 
-            if (isValidPosition(nx, ny) && grid[nx][ny] == '1') {
+            if (!isOutOfBounds(nx, ny) && grid[nx][ny] == '1') {
                 dfs(grid, nx, ny);
             }
         }
     }
 
-    private boolean isValidPosition(int x, int y) {
-        return x >= 0 && y >= 0 && x < n && y < m;
+    private boolean isOutOfBounds(int x, int y) {
+        return x < 0 || y < 0 || x >= n || y >= m;
     }
 }
