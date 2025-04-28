@@ -5,7 +5,6 @@ class Solution {
 
     public List<List<Integer>> permute(int[] nums) {
         length = nums.length;
-
         dfs(nums, 0);
         return combinations;
     }
