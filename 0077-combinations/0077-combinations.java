@@ -19,7 +19,7 @@ class Solution {
             return;
         }
 
-        for (int i = start; i <= N; i++) {
+        for (int i = start; i <= N - (K - size) + 1; i++) {
             combination.add(i);
             dfs(combination, i + 1, size + 1);
             combination.removeLast();
