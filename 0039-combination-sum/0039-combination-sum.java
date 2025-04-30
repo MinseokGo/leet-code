@@ -5,7 +5,6 @@ class Solution {
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         length = candidates.length;
-        Arrays.sort(candidates);
         dfs(candidates, 0, new ArrayList<>(), 0, target);
         return combinations.stream().toList();
     }
@@ -18,12 +17,11 @@ class Solution {
 
         for (int i = start; i < length; i++) {
             int number = candidates[i];
-            if (sum + number > target) {
-                break;
+            if (sum + number <= target) {
+                combination.add(number);
+                dfs(candidates, i, combination, sum + number, target);
+                combination.removeLast();
             }
-            combination.add(number);
-            dfs(candidates, i, combination, sum + number, target);
-            combination.removeLast();
         }
     }
 }
