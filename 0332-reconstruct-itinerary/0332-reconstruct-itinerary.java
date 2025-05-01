@@ -1,0 +1,20 @@
+class Solution {
+
+    private List<String> answer = new ArrayList<>();
+    private Map<String, PriorityQueue<String>> map = new HashMap<>();
+
+    public List<String> findItinerary(List<List<String>> tickets) {
+        for (List<String> ticket : tickets) {
+            map.computeIfAbsent(ticket.get(0), k -> new PriorityQueue<>()).add(ticket.get(1));
+        }
+        dfs("JFK");
+        return answer;
+    }
+
+    private void dfs(String airport) {
+        while (map.containsKey(airport) && map.get(airport).size() > 0) {
+            dfs(map.get(airport).poll());
+        }
+        answer.add(0, airport);
+    }
+}
