@@ -13,8 +13,11 @@ class Solution {
     }
 
     private void dfs(String airport) {
-        while (map.containsKey(airport) && map.get(airport).size() > 0) {
-            dfs(map.get(airport).poll());
+        PriorityQueue<String> pq = map.get(airport);
+        if (pq != null) {
+            while (!pq.isEmpty()) {
+                dfs(pq.poll());
+            }
         }
         answer.add(airport);
     }
