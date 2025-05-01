@@ -5,7 +5,12 @@ class Solution {
 
     public List<String> findItinerary(List<List<String>> tickets) {
         for (List<String> ticket : tickets) {
-            map.computeIfAbsent(ticket.get(0), k -> new PriorityQueue<>()).add(ticket.get(1));
+            PriorityQueue<String> pq = map.get(ticket.get(0));
+            if (pq == null) {
+                pq = new PriorityQueue<>();
+                map.put(ticket.get(0), pq);
+            }
+            pq.add(ticket.get(1));
         }
         dfs("JFK");
         Collections.reverse(answer);
