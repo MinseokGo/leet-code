@@ -8,6 +8,7 @@ class Solution {
             map.computeIfAbsent(ticket.get(0), k -> new PriorityQueue<>()).add(ticket.get(1));
         }
         dfs("JFK");
+        Collections.reverse(answer);
         return answer;
     }
 
@@ -15,6 +16,6 @@ class Solution {
         while (map.containsKey(airport) && map.get(airport).size() > 0) {
             dfs(map.get(airport).poll());
         }
-        answer.add(0, airport);
+        answer.add(airport);
     }
 }
