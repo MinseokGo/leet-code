@@ -17,6 +17,8 @@ class Solution {
         }
 
         return answer;
+
+        // 최대힙 방식은 72ms
         // PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 
         // for (int num : nums) {
