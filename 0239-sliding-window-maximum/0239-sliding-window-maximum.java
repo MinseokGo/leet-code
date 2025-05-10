@@ -13,7 +13,7 @@ class Solution {
                 deque.pollLast();
             }
 
-            deque.offer(i);
+            deque.addLast(i);
 
             if (i >= k - 1) {
                 answer[i - k + 1] = nums[deque.peekFirst()];
