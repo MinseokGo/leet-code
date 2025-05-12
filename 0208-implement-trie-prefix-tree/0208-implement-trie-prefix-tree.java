@@ -1,82 +1,46 @@
 class Trie {
+    
+    static class TrieNode {
+        TrieNode[] children = new TrieNode[26];
+        boolean isEndOfWord;
+    }
 
-    Node root;
+    private final TrieNode rootNode;
 
     public Trie() {
-        root = new Node();
+        rootNode = new TrieNode();
     }
     
     public void insert(String word) {
-        root.insert(word, 0);
+        TrieNode currentNode = rootNode;
+        for (char currentChar : word.toCharArray()) {
+            int charIndex = currentChar - 'a';
+            if (currentNode.children[charIndex] == null) {
+                currentNode.children[charIndex] = new TrieNode();
+            }
+            currentNode = currentNode.children[charIndex];
+        }
+        currentNode.isEndOfWord = true;
     }
     
     public boolean search(String word) {
-        return root.search(word, 0);
+        TrieNode endNode = findNode(word);
+        return endNode != null && endNode.isEndOfWord;
     }
     
     public boolean startsWith(String prefix) {
-        return root.startsWith(prefix, 0);
+        return findNode(prefix) != null;
     }
 
-    static class Node {
-        Node[] nodes;
-        boolean hasEnd;
-
-        Node() {
-            nodes = new Node[26];
+    private TrieNode findNode(String str) {
+        TrieNode currentNode = rootNode;
+        for (char currentChar : str.toCharArray()) {
+            int charIndex = currentChar - 'a';
+            if (currentNode.children[charIndex] == null) {
+                return null;
+            }
+            currentNode = currentNode.children[charIndex];
         }
-
-        private void insert(String word, int index) {
-            if (index >= word.length()) {
-                return;
-            }
-
-            int insertIndex = word.charAt(index) - 'a';
-            if (nodes[insertIndex] == null) {
-                nodes[insertIndex] = new Node();
-            }
-
-            if (index == word.length() - 1) {
-                nodes[insertIndex].hasEnd = true;
-            }
-
-            nodes[insertIndex].insert(word, index + 1);
-        }
-
-        private boolean search(String word, int index) {
-            if (index >= word.length()) {
-                return false;
-            }
-
-            int searchIndex = word.charAt(index) - 'a';
-            Node findNode = nodes[searchIndex];
-            if (findNode == null) {
-                return false;
-            }
-
-            if (index == word.length() - 1 && findNode.hasEnd) {
-                return true;
-            }
-
-            return findNode.search(word, index + 1);
-        }
-
-        private boolean startsWith(String word, int index) {
-            if (index >= word.length()) {
-                return false;
-            }
-
-            int searchIndex = word.charAt(index) - 'a';
-            Node findNode = nodes[searchIndex];
-            if (findNode == null) {
-                return false;
-            }
-
-            if (index == word.length() - 1) {
-                return true;
-            }
-
-            return findNode.startsWith(word, index + 1);
-        }
-    }  
+        return currentNode;
+    }
 }
