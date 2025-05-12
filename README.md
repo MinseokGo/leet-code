@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/MinseokGo/leet-code/tree/master/0015-3sum) |
 | [0042-trapping-rain-water](https://github.com/MinseokGo/leet-code/tree/master/0042-trapping-rain-water) |
 | [0125-valid-palindrome](https://github.com/MinseokGo/leet-code/tree/master/0125-valid-palindrome) |
+| [0148-sort-list](https://github.com/MinseokGo/leet-code/tree/master/0148-sort-list) |
 | [0234-palindrome-linked-list](https://github.com/MinseokGo/leet-code/tree/master/0234-palindrome-linked-list) |
 | [0344-reverse-string](https://github.com/MinseokGo/leet-code/tree/master/0344-reverse-string) |
 ## String
@@ -93,6 +94,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/MinseokGo/leet-code/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/MinseokGo/leet-code/tree/master/0049-group-anagrams) |
+| [0148-sort-list](https://github.com/MinseokGo/leet-code/tree/master/0148-sort-list) |
 | [0215-kth-largest-element-in-an-array](https://github.com/MinseokGo/leet-code/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/MinseokGo/leet-code/tree/master/0347-top-k-frequent-elements) |
 | [0561-array-partition](https://github.com/MinseokGo/leet-code/tree/master/0561-array-partition) |
@@ -123,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/MinseokGo/leet-code/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0021-merge-two-sorted-lists) |
 | [0023-merge-k-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0023-merge-k-sorted-lists) |
+| [0148-sort-list](https://github.com/MinseokGo/leet-code/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/MinseokGo/leet-code/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/MinseokGo/leet-code/tree/master/0234-palindrome-linked-list) |
 | [0817-design-hashmap](https://github.com/MinseokGo/leet-code/tree/master/0817-design-hashmap) |
@@ -157,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0023-merge-k-sorted-lists) |
+| [0148-sort-list](https://github.com/MinseokGo/leet-code/tree/master/0148-sort-list) |
 | [0215-kth-largest-element-in-an-array](https://github.com/MinseokGo/leet-code/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/MinseokGo/leet-code/tree/master/0347-top-k-frequent-elements) |
 | [1014-k-closest-points-to-origin](https://github.com/MinseokGo/leet-code/tree/master/1014-k-closest-points-to-origin) |
@@ -172,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MinseokGo/leet-code/tree/master/0023-merge-k-sorted-lists) |
+| [0148-sort-list](https://github.com/MinseokGo/leet-code/tree/master/0148-sort-list) |
 ## Math
 |  |
 | ------- |
